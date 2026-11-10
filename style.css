@@ -1,0 +1,108 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+header{
+    color:rgb(4, 4, 107);
+    text-align: center;
+    text-size-adjust: 50px;
+    font-family: sans-serif;
+}
+
+
+nav{
+    background: rgb(195, 186, 186);    
+    text-align: center;
+    color: rgb(2, 6, 72);
+    font-family: sans-serif;
+}
+
+nav a{
+    color: white;
+    font-family: var(--font-body);
+    text-decoration: none;
+    gap: 30rem;
+}
+
+body{
+    height:100dvh;
+    width:90%;
+    margin-left:auto;
+    margin-right:auto;
+    display:flex;
+    flex-direction:column;
+    background: var(--surface);
+}
+
+main{
+    padding: 1rem;
+    display:flex;
+    flex-direction:column;
+    flex-grow:5;
+    background: rgb(238, 231, 231);
+}
+
+p{
+    line-height: 1.5;
+    padding: 1rem;
+    font-family: sans-serif;
+    color: black;
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    padding: 1rem;
+  color: black;
+  font-family: sans-serif;
+}
+
+footer{
+    background: var(--primary);
+    color: rgb(15, 27, 116);
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.bilder{
+    padding:1rem;
+    flex-grow: 5;
+    display:grid;
+    grid-template-areas: 
+    "aa bb"
+    "cc dd";
+    gap: 1rem;
+}
+
+article.bilder div{
+    object-fit: cover;
+    background-position: center;
+    background-size: cover;
+    aspect-ratio: 9/6;
+}
+
+article.bilder div:nth-child(1){
+    grid-area:aa;
+    background-image: URL("https://tse3.mm.bing.net/th/id/OIP.36dyyo94-YPUHmNvbtbMIQHaE8?r=0&rs=1&pid=ImgDetMain&o=7&rm=3");
+}
+
+article.bilder div:nth-child(2){
+    grid-area:bb;
+    background-image: URL("https://cdn.pixabay.com/photo/2024/11/23/17/27/forget-me-nots-9219415_1280.jpg");
+} 
+
+article.bilder div:nth-child(3){
+    grid-area:cc;
+    background-image: URL("https://cdn.pixabay.com/photo/2021/12/17/09/06/forget-me-nots-6876049_1280.jpg");
+}
+
+article.bilder div:nth-child(4){
+    grid-area:dd;
+    background-image: URL("https://cdn.mos.cms.futurecdn.net/ndmt6YbXALFADH8f9iRUcj.jpg");
+}
